@@ -1,6 +1,6 @@
 {
-  "name": "@unpourtous/react-native-custom-keyboard",
-  "version": "1.1.5",
+  "name": "@TreeNewbie/react-native-custom-keyboard",
+  "version": "2.0.0",
   "description": "react native custom keyboard for both Android and iOS",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reactnativecn/react-native-custom-keyboard.git"
+    "url": "git+https://github.com/TreeNewbie/react-native-custom-keyboard"
   },
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "ufolux",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.50.0"
+    "react-native": "^0.55.4"
   }
 }
