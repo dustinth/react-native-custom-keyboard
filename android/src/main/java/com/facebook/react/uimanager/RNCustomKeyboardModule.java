@@ -205,6 +205,9 @@ public class RNCustomKeyboardModule extends ReactContextBaseJavaModule {
         Bundle bundle = new Bundle();
         bundle.putInt("tag", tag);
         bundle.putString("type", type);
+
+        Application application = activity.getApplication();
+        rnInstanceManager = ((ReactApplication)application).getReactNativeHost().getReactInstanceManager();
         rootView.startReactApplication(
                 rnInstanceManager,
                 "CustomKeyboard",
