@@ -1,6 +1,7 @@
 
 package com.facebook.react.uimanager;
 
+import android.app.Application;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 
 import android.widget.RelativeLayout;
+import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
