@@ -65,7 +65,7 @@ export class CustomTextInput extends Component {
         this.props.maxLength === undefined ? 1024 : this.props.maxLength,
         getKeyboardHeightByType(this.props.customKeyboardType)
       );
-    }, 0)
+    }, 100)
   }
   componentWillReceiveProps(newProps) {
     if (this.props.customKeyboardType && newProps.customKeyboardType && newProps.customKeyboardType !== this.props.customKeyboardType) {
