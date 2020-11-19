@@ -59,6 +59,9 @@ export class CustomTextInput extends Component {
   };
   componentDidMount() {
     setTimeout(()=>{
+      if(!this.input) {
+        return
+      }
       install(
         findNodeHandle(this.input),
         this.props.customKeyboardType,
@@ -69,6 +72,9 @@ export class CustomTextInput extends Component {
   }
   componentWillReceiveProps(newProps) {
     if (this.props.customKeyboardType && newProps.customKeyboardType && newProps.customKeyboardType !== this.props.customKeyboardType) {
+      if(!this.input) {
+        return
+      }
       install(
         findNodeHandle(this.input),
         newProps.customKeyboardType,
@@ -78,9 +84,7 @@ export class CustomTextInput extends Component {
     }
   }
   onRef = ref => {
-    if (ref) {
     this.input = ref;
-    }
   };
   render() {
     const { customKeyboardType, ...others } = this.props;
